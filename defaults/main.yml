@@ -1,4 +1,5 @@
 ---
 # defaults file for beats
-beats_package_name: topbeat
+beats_package_name: metricbeat
+beats_package_version: 5.2.2
 beats_install: true

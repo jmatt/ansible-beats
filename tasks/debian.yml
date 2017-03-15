@@ -2,7 +2,7 @@
 # Install beats package on debian based distributions.
 
 - name: Install {{ beats_package_name }} deb package.
-  apt: deb="https://artifacts.elastic.co/downloads/beats/{{ beats_package_name }}/{{ beats_package_name }}-5.0.2-amd64.deb" state=present
+  apt: deb="https://artifacts.elastic.co/downloads/beats/{{ beats_package_name }}/{{ beats_package_name }}-{{ beats_package_version }}-amd64.deb" state=present
   notify:
     - enable beat
     - restart beat

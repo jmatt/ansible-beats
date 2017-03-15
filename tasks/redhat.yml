@@ -2,7 +2,7 @@
 # Install Beats package on redhat based distributions.
 
 - name: Install {{ beats_package_name }} rpm package.
-  yum: name="https://artifacts.elastic.co/downloads/beats/{{ beats_package_name }}/{{ beats_package_name }}-5.0.2-x86_64.rpm"
+  yum: name="https://artifacts.elastic.co/downloads/beats/{{ beats_package_name }}/{{ beats_package_name }}-{{ beats_package_version }}-x86_64.rpm"
   notify:
     - enable beat
     - restart beat
