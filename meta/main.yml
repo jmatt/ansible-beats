@@ -31,5 +31,4 @@ galaxy_info:
     - topbeat
     - ubuntu
 dependencies:
-  - role: cyverse.geoip
-    when: beats_geoip | default(false)
+  - { role: cyverse.geoip, when: beats_geoip | default(false) }
