@@ -1,6 +1,6 @@
 galaxy_info:
   author: J. Matt Peterson
-  description: Elastic beats v 5.0 for LSST SQuaRE.
+  description: Elastic beats v 5.x for LSST SQuaRE.
   company: LSST SQuaRE
   issue_tracker_url: https://github.com/lsst-sqre/ansible-beats/issues
   license: MIT
@@ -26,6 +26,7 @@ galaxy_info:
     - beats
     - elastic
     - filebeat
+    - metricbeat
     - packetbeat
     - system
     - topbeat
